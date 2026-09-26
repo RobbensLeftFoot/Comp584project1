@@ -17,7 +17,8 @@
 			body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
 			
 			
-			a[x-apple-data-detectors] {
+			a[x-apple-data-detectors] 
+			{
 			    color: inherit !important;
 			    text-decoration: none !important;
 			    font-size: inherit !important;
@@ -27,7 +28,8 @@
 			}
 			
 			
-			u + #body a {
+			u + #body a 
+			{
 			    color: inherit;
 			    text-decoration: none;
 			    font-size: inherit;
@@ -37,7 +39,8 @@
 			}
 			
 			
-			#MessageViewBody a {
+			#MessageViewBody a 
+			{
 			    color: inherit;
 			    text-decoration: none;
 			    font-size: inherit;
@@ -50,31 +53,84 @@
 		
 
 			
-			@media screen and (max-width: 600px) {
+			
+			.donate-btn
+			 {
+				transition: background-color 0.3s ease, box-shadow 0.3s ease, letter-spacing 0.3s ease !important;
+			}
+			.donate-btn:hover 
+			{
+				background-color: #0d47a1 !important;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+				letter-spacing: 1px !important;
+			}
+
+			.footer-link 
+			{
+				transition: color 0.3s ease !important;
+			}
+			.footer-link:hover
+			 {
+				color: #0d47a1 !important;
+				text-decoration: none !important;
+			}
+
+
+		
+			@keyframes btn-pulse 
+			{
+				from { background-color: #1a73e8; }
+				to   { background-color: #0d47a1; }
+			}
+			.donate-btn 
+			{
+				animation: 2s infinite alternate btn-pulse;
+			}
+
+		
+			@keyframes slide-down 
+			{
+				from { transform: translateY(-40px); }
+				to   { transform: translateY(0); }
+			}
+			.animate-headline 
+			{
+				animation: 1s 1 slide-down;
+			}
+
+		
+
+			@media screen and (max-width: 600px)
+			{
 
 				
-				.stack-column {
+				.stack-column 
+				{
 					display: block !important;
 					width: 100% !important;
 					max-width: 100% !important;
 				}
 
 				
-				.mobile-h1 {
+				.mobile-h1 
+				{
 					font-size: 26px !important;
 					line-height: 32px !important;
 				}
-				.mobile-h2 {
+				.mobile-h2
+				 {
 					font-size: 19px !important;
 					line-height: 25px !important;
 				}
-				.mobile-text {
+				.mobile-text 
+				{
 					font-size: 16px !important;
 					line-height: 24px !important;
 				}
 
 				
-				.mobile-padding {
+				.mobile-padding 
+				{
 					padding-left: 16px !important;
 					padding-right: 16px !important;
 				}
@@ -101,7 +157,7 @@
 					<!-- Headline -->
 					<tr>
 						<td class="mobile-padding" align="center" style="padding:8px 20px; background-color:#ffffff;">
-							<h1 class="mobile-h1" style="color:#2c3e50; font-family:Arial,sans-serif; font-size:35px; line-height:42px; margin:0;">Please donate to our cause</h1>
+							<h1 class="mobile-h1 animate-headline" style="color:#2c3e50; font-family:Arial,sans-serif; font-size:35px; line-height:42px; margin:0;">Please donate to our cause</h1>
 						</td>
 					</tr>
 
@@ -197,7 +253,7 @@
 							<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
 								<tr>
 									<td align="center" style="padding: 20px 0;">
-										<a href="https://fcbayern.com"
+										<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="donate-btn"
 										   style="background-color:#1a73e8; border-radius:5px; color:#ffffff; display:inline-block; font-family:Arial,sans-serif; font-size:16px; font-weight:bold; line-height:50px; text-align:center; text-decoration:none; width:220px; -webkit-text-size-adjust:none;">
 											Donate
 										</a>
@@ -210,7 +266,7 @@
 				
 					<tr>
 						<td align="center" style="padding:16px 20px; background-color:#ffffff;">
-							<a href="#" style="color:#1a73e8; text-decoration:underline;">Unsubscribe</a>
+							<a href="#" class="footer-link" style="color:#1a73e8; text-decoration:underline;">Unsubscribe</a>
 						</td>
 					</tr>
 
