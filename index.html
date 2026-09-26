@@ -6,17 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<style type="text/css">
-      /* CLIENT-SPECIFIC STYLES */
+      
 			body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 			table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
 			img { -ms-interpolation-mode: bicubic; }
 			
-			/* RESET STYLES */
+	
 			img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
 			table { border-collapse: collapse !important; }
 			body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
 			
-			/* iOS BLUE LINKS */
+			
 			a[x-apple-data-detectors] {
 			    color: inherit !important;
 			    text-decoration: none !important;
@@ -26,7 +26,7 @@
 			    line-height: inherit !important;
 			}
 			
-			/* GMAIL BLUE LINKS */
+			
 			u + #body a {
 			    color: inherit;
 			    text-decoration: none;
@@ -36,7 +36,7 @@
 			    line-height: inherit;
 			}
 			
-			/* SAMSUNG MAIL BLUE LINKS */
+			
 			#MessageViewBody a {
 			    color: inherit;
 			    text-decoration: none;
@@ -46,21 +46,49 @@
 			    line-height: inherit;
 			}
 
-			/* Universal styles for links and stuff */
+			
 		
 
-			/* Responsive styles */
-	
+			
+			@media screen and (max-width: 600px) {
+
+				
+				.stack-column {
+					display: block !important;
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+
+				
+				.mobile-h1 {
+					font-size: 26px !important;
+					line-height: 32px !important;
+				}
+				.mobile-h2 {
+					font-size: 19px !important;
+					line-height: 25px !important;
+				}
+				.mobile-text {
+					font-size: 16px !important;
+					line-height: 24px !important;
+				}
+
+				
+				.mobile-padding {
+					padding-left: 16px !important;
+					padding-right: 16px !important;
+				}
+			}
 		</style>
 	</head>
 	<body id="body" style="margin: 0 !important; padding: 0 !important;">
 
-	<!-- OUTER TABLE: full-width, centers the fixed inner table -->
+	
 	<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 		<tr>
 			<td align="center" background="images/arena.jpg" style="padding:30px 0; background-image:url('images/arena.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat;">
 
-				<!-- INNER TABLE: single-column content, fixed at 600px -->
+				
 				<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px; width:100%;" align="center">
 
 					<!-- Logo image -->
@@ -72,22 +100,94 @@
 
 					<!-- Headline -->
 					<tr>
-						<td align="center" style="padding:8px 20px; background-color:#ffffff;">
-							<h1 style="color:#2c3e50; font-size:35px; margin:0;">Please donate to our cause</h1>
+						<td class="mobile-padding" align="center" style="padding:8px 20px; background-color:#ffffff;">
+							<h1 class="mobile-h1" style="color:#2c3e50; font-family:Arial,sans-serif; font-size:35px; line-height:42px; margin:0;">Please donate to our cause</h1>
 						</td>
 					</tr>
 
 					<!-- Hero Image -->
 					<tr>
 						<td align="center" style="background-color:#ffffff;">
-							<!-- hero image goes here -->
+							
 						</td>
 					</tr>
 
-					<!-- Body copy -->
+					
 					<tr>
-						<td align="left" style="padding:8px 20px; background-color:#ffffff;">
-							<h1 style="color:#2c3e50; font-size:15px; margin:0;">Please consider a small donation to our club. Donations as small as 25k Euros are accepted!</h1>
+						<td class="mobile-padding" align="left" style="padding:8px 20px; background-color:#ffffff;">
+							<p class="mobile-text" style="color:#2c3e50; font-family:Arial,sans-serif; font-size:15px; line-height:23px; margin:0;">Please consider a small donation to our club. Donations as small as 25k Euros are accepted!</p>
+						</td>
+					</tr>
+
+					
+					<tr>
+						<td class="mobile-padding" align="center" style="padding:20px; background-color:#ffffff; font-size:0;">
+
+							
+							<div class="stack-column" style="display:inline-block; width:100%; max-width:280px; vertical-align:top;">
+								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td style="padding:10px;">
+											<h2 class="mobile-h2" style="color:#2c3e50; font-family:Arial,sans-serif; font-size:22px; line-height:28px; margin:0 0 8px 0;">Player lifestyle funding</h2>
+											<p class="mobile-text" style="color:#555555; font-family:Arial,sans-serif; font-size:14px; line-height:22px; margin:0;">Your donation helps fund certain aspects of our player's lifestyles, whether that is paying for their clothes, or to refuel their Lagonda's.</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+							
+							<div class="stack-column" style="display:inline-block; width:100%; max-width:280px; vertical-align:top;">
+								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td style="padding:10px;">
+											<h2 class="mobile-h2" style="color:#2c3e50; font-family:Arial,sans-serif; font-size:22px; line-height:28px; margin:0 0 8px 0;">General club funding</h2>
+											<p class="mobile-text" style="color:#555555; font-family:Arial,sans-serif; font-size:14px; line-height:22px; margin:0;">We also allow club members to fund the club in a more direct approach, whether that be paying for players fines, whenever they get a red card, or just paying for their meals.</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						
+
+						</td>
+					</tr>
+
+					<tr>
+						<td class="mobile-padding" align="center" style="padding:20px; background-color:#f7f7f7; font-size:0;">
+
+							
+							<div class="stack-column" style="display:inline-block; width:100%; max-width:186px; vertical-align:top;">
+								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td align="center" style="padding:10px;">
+											<h2 class="mobile-h2" style="color:#1a73e8; font-family:Arial,sans-serif; font-size:28px; line-height:34px; margin:0 0 6px 0;">€25k</h2>
+											<p class="mobile-text" style="color:#555555; font-family:Arial,sans-serif; font-size:14px; line-height:22px; margin:0;">Pays the players speeding tickets for 3 weeks and 4 days.</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						
+							<div class="stack-column" style="display:inline-block; width:100%; max-width:186px; vertical-align:top;">
+								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td align="center" style="padding:10px;">
+											<h2 class="mobile-h2" style="color:#1a73e8; font-family:Arial,sans-serif; font-size:28px; line-height:34px; margin:0 0 6px 0;">€50k</h2>
+											<p class="mobile-text" style="color:#555555; font-family:Arial,sans-serif; font-size:14px; line-height:22px; margin:0;">Allows us to serve caviar to the players 4 times a week.</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						
+							<div class="stack-column" style="display:inline-block; width:100%; max-width:186px; vertical-align:top;">
+								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td align="center" style="padding:10px;">
+											<h2 class="mobile-h2" style="color:#1a73e8; font-family:Arial,sans-serif; font-size:28px; line-height:34px; margin:0 0 6px 0;">€100k</h2>
+											<p class="mobile-text" style="color:#555555; font-family:Arial,sans-serif; font-size:14px; line-height:22px; margin:0;">Allows funds to be accrued for our next transfer.</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+							
+
 						</td>
 					</tr>
 
@@ -107,7 +207,7 @@
 						</td>
 					</tr>
 
-					<!-- Footer information: Always include an unsubscribe link! -->
+				
 					<tr>
 						<td align="center" style="padding:16px 20px; background-color:#ffffff;">
 							<a href="#" style="color:#1a73e8; text-decoration:underline;">Unsubscribe</a>
@@ -115,12 +215,12 @@
 					</tr>
 
 				</table>
-				<!-- END INNER TABLE -->
+			
 
 			</td>
 		</tr>
 	</table>
-	<!-- END OUTER TABLE -->
+	
 
 	</body>
 </html>
